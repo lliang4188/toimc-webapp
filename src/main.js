@@ -3,8 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import { Button, Cell } from 'mint-ui'
 Vue.config.productionTip = false
 
+Vue.component(Button.name, Button)
+Vue.component(Cell.name, Cell)
 new Vue({
   router,
   store,
